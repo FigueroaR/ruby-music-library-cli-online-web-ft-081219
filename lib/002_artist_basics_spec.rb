@@ -1,6 +1,8 @@
 require 'pry'
 class Artist
-  attr_accessor :name, :song
+
+  attr_accessor :name, :songs, :genre
+
   @@all = []
   def initialize(name)
     @name = name
@@ -36,8 +38,8 @@ class Artist
   end
   
   def add_song(song)
-    @songs << song unless songs.include?(song)
-    song.artist = self 
+    @songs << song unless songs.include?(song) 
+    song.artist = self
     #binding.pry 
   end
   
@@ -46,4 +48,7 @@ class Artist
     #binding.pry
   end
   
+  def genres 
+    
+  end 
 end 

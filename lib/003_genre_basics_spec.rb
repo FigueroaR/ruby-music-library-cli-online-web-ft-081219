@@ -1,9 +1,10 @@
+require 'pry'
 class Genre
-  
-  attr_accessor :name
+  attr_accessor :name, :songs
   @@all = []
   def initialize(name)
     @name = name 
+    @songs = [] 
     save 
     #binding.pry
   end 
@@ -34,5 +35,9 @@ class Genre
     self.find_by_name(name) || self.create_by_name(name)
   end
   
+  def artists
+    #@songs.collect{|s| s.artist}.uniq
+    binding.pry 
+  end 
   
 end
