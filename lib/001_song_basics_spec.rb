@@ -9,7 +9,7 @@ class Song
     @name = name 
     @artist = artist 
     save 
-    binding.pry
+    #binding.pry
   end 
  
   def genre=(genre)
