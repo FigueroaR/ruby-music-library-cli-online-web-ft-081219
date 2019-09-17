@@ -39,5 +39,5 @@ class Genre
     #@songs.collect{|s| s.artist}.uniq
     binding.pry 
   end 
-  
+
 end
