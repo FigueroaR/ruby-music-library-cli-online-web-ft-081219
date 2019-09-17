@@ -34,14 +34,14 @@ class Song
     #binding.pry 
   end 
   
-  def self.find_by_name(name)
-    @@all.detect{ |c| c.name== name}
+  #def self.find_by_name(name)
+    #@@all.detect{ |c| c.name== name}
     #binding.pry
-  end
+  #end
   
-  def self.find_or_create_by_name(name)
-    self.find_by_name(name) || self.create_by_name(name)
-  end
+  #def self.find_or_create_by_name(name)
+    #self.find_by_name(name) || self.create_by_name(name)
+  #end
   
   
 
